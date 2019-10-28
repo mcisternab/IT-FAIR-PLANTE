@@ -11,8 +11,8 @@ def Registro(request):
 def Info(request):
     return render(request, 'principal/informacion.html')
 
-def Formulario(request):
-    return render(request, 'principal/formulario.html')
+def Mapas(request):
+    return render(request, 'principal/mapas.html')
 
 def Inicio(request):
     return render(request, 'principal/iniciosesion.html')
