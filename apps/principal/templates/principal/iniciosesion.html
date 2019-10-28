@@ -1,0 +1,28 @@
+{% extends 'principal/plantillacinco.html'%}
+{% block contenido %}
+
+{% load static %}
+<body class="bodyInicio">
+    <div class="container" >
+        <h2 class="centrado">Inicio de sesión</h2>
+                <form action="principal.html" method="POST" id="Inicio">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="correoUsuario" name="correoUsuario" placeholder="Correo ">   
+                  </div>
+                  <div class="form-group">
+                        <input type="password" height="50" class="form-control"id="contraseña" name="contraseña" placeholder="Contraseña">  
+                  </div>
+                  <acronym title="Enviar" lang="es"> <button type="submit" class="btn btn-primary button center">Ingresar</button></i></acronym> 
+                </form>
+    <p1>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p1>
+    <p1>¿No tienes una cuenta? <a class="link" href="registro.html">Registrate </a></p1>
+    </div>
+    <!--JS FILES-->
+    <script src="{% static 'principal/js/jquery-3.4.1.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="{% static 'principal/js/jquery.validate.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="{% static 'principal/js/bootstrap.js' %}" ></script>
+    <script src="{% static 'principal/js/app.js' %}"></script>
+</body>
+{% endblock contenido %}

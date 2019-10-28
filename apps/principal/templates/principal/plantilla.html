@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plante</title>
+    <link rel="stylesheet" href="{% static 'principal/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'principal/css/flexboxgrid.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css">
+    <link rel="stylesheet" href="{% static 'principal/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'principal/img/logo.png' %}">
+</head>
+<body>
+  
+    {% block contenido %}
+
+    {% endblock contenido %}
+
+  <!--JS FILES-->
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/app.js"></script>
+    
+</body>
+</html>

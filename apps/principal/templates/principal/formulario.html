@@ -1,0 +1,53 @@
+{% extends 'principal/plantillatres.html'%}
+{% block contenido %}
+
+{% load static %}
+      <div class="container texto-blanco " >
+        <form action="registro.html" method="GET" id="formulario">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" height="50" class="form-control" name="nombre" placeholder="Ingrese su nombre">  
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" height="50" class="form-control" name="apellido" placeholder="Ingrese su apellido">  
+          </div>
+          <div class="form-group">
+            <label for="fnacimiento">Fecha de nacimiento</label>
+            <input type="date" class="form-control" name="fnacimiento" placeholder="Ingrese su fecha de nacimiento">  
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo</label>
+            <input type="email" class="form-control" name="correo" placeholder="Ingrese su correo">   
+          </div>
+          <div class="form-group">
+            <label for="ncontacto">Numero de Contacto</label>
+            <input type="tel" class="form-control" name="ncontacto" placeholder="Ingrese su numero de contacto" >   
+          </div>
+          <div class="form-group">
+                <label for="Comuna">Comuna </label>
+                <br>
+                <select name="Comuna" class="form-control selectpicker " >
+                    <option class="btn-primary" >Huechuraba</option>
+                    <option class="btn-primary">Las condes</option>
+                    <option class="btn-primary">Renca</option>
+                    <option class="btn-primary">Quilicura</option>
+                    <option class="btn-primary">Conchalí</option>
+                    <option class="btn-primary">Providencia</option>
+                    <option class="btn-primary">Macul</option>
+                    <option class="btn-primary">Ñuñoa</option>
+                    <option class="btn-primary">Renca</option>
+                    <option class="btn-primary" selected> </option>
+                </select>  
+            </div>
+          
+
+          <div class="form-group">
+               <label for="bio">Comentario</label>
+               <textarea name="bio" class="form-control" rows="3"></textarea>
+          </div>
+          <acronym title="Limpiar" lang="es"> <button type="reset" class="btn btn-primary button">Limpiar</button></i></acronym>
+          <acronym title="Enviar" lang="es"> <button type="submit" class="btn btn-primary button">Enviar</button></i></acronym> 
+        </form>
+</div>
+{% endblock contenido %}

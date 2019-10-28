@@ -1,0 +1,214 @@
+.main{
+    background-color:#6DCCAA;
+}
+
+.header{
+    background-color:#85D4B7;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.centrar{
+    text-align: center;
+}
+.texto-blanco{
+    color:#ffffff;
+}
+a{
+    text-decoration: none;
+}
+#logo{
+    padding: 10px;
+}
+ul{
+    list-style: none;
+    padding: 10px;
+}
+li{
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.texto-derecha{
+    text-align: right;
+}
+
+footer{
+    background-color:#85D4B7;
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px;
+}
+.altura{
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 50px;
+    border: 5px;
+    border-radius: 40px;
+}
+.carousel-control-next-icon{
+    background-color: rgb(0, 45, 245);
+    border: 2px solid black;
+    border-radius: 40px;
+    width: 30px;
+    height: 30px;
+}
+.carousel-control-prev-icon {
+    background-color: rgb(0, 45, 245);
+    border: 2px solid black;
+    border-radius: 40px;
+    width: 30px;
+    height: 30px;
+}
+.carousel-caption{
+    left: 10px;
+    right: 55%;
+    text-align: left;
+    color: #000000;
+    font-weight: bold;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+@media (max-width: 576px) {
+    .no-xs{
+        display: none;
+    }
+    .margin-top-xs{
+        margin-top: 20px;
+    }
+}
+.boton{
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px;
+    border: 2px solid #000000;
+}
+.img-margin-top{
+    margin-top: 10px;
+}
+
+
+body{
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    max-width: 750px;
+    margin: 48px auto;
+    border-radius: 10px;
+    padding: 40px;
+    
+
+}
+.containerPrincipal{
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 10px;
+    border-width: 100px;;
+    padding: 40px;
+    
+
+}
+.containerJuego {
+    background: white;
+    width: 100%;
+    max-width: 650px;
+    margin: 48px auto;
+    border-radius: 10px;
+    padding: 40px;
+
+}
+.bodyInicio{
+    background: url(../img/fondo4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 10%;
+    padding: 0px;
+}
+.bodyJuego{
+    background: url(../img/fondo4.jpg);
+}
+label.is-invalid{
+    color: yellow;
+}
+.buttonComuna{
+    background-color: dodgerblue;
+    border:2px solid black;
+}
+h1{
+    font-family: 'Patua+One', sans-serif;
+    color: #3B7FFF;
+    text-align: center;
+}
+h2{
+    font-family: 'Luckiest Guy', cursive;
+    color: #3B7FFF;
+    
+}
+h3{
+    font-family: 'Cinzel Decorative', cursive;
+    color: beige;
+}
+p{
+    font-family: 'Viga', sans-serif;
+}
+p1{
+    font-family: 'Andika', sans-serif;
+    color: beige;
+}
+.centrado{
+    text-align: center;
+}
+.section{
+    margin-left: 30px;
+    margin-right: 30px;
+}	
+.texto-borde {
+    text-align: center;
+    color: #FCDB00;
+    font-family: impact;
+    font-size: 46px;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    -webkit-text-fill-color: chartreuse;;
+    -webkit-text-stroke: 4px black;
+}
+#linav{
+	box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 20px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}

@@ -1,0 +1,72 @@
+{% extends 'principal/plantillaregistro.html'%}
+{% block contenido %}
+
+{% load static %}
+<body class="bodyInicio">
+    <div class="container texto-blanco" >
+        <h2>Registrate</h2>
+        <form action="Registro.html" method="POST" id="registro">
+                <div class="form-group">
+                  <label for="nombre">Nombre </label>
+                  <input type="text" height="50" class="form-control" name="nombre" placeholder="Ingrese su nombre">  
+                </div>
+                <div class="form-group">
+                  <label for="apellido">Apellido</label>
+                  <input type="text" height="50" class="form-control" name="apellido" placeholder="Ingrese su apellido">  
+                </div>
+                <div class="form-group">
+                <label>Contraseña:</label>
+                <input type="password" class="form-control" id="password" name="password" minlength="6" maxlength="20" placeholder="Ingrese su contraseña">
+                </div>
+                <div class="form-group">
+                <label>Reingresa contraseña: </label>
+                <input type="password" class="form-control" name="password2" minlength="6" maxlength="20" placeholder="Ingrese nuevamente su contraseña">
+                </div>
+                <div class="form-group">
+                  <label for="imagen">Seleccione una foto de perfil</label>
+                  <input name="archivo1" type="file" class="form-control" id="archivo1">
+                </div>
+                <div class="form-group">
+                    <label for="Comuna">Comuna </label>
+                    <br>
+                    <select name="Comuna" class="form-control selectpicker " >
+                        <option class="btn-primary" >Huechuraba</option>
+                        <option class="btn-primary">Las condes</option>
+                        <option class="btn-primary">Renca</option>
+                        <option class="btn-primary">Quilicura</option>
+                        <option class="btn-primary">Conchalí</option>
+                        <option class="btn-primary">Providencia</option>
+                        <option class="btn-primary">Macul</option>
+                        <option class="btn-primary">Ñuñoa</option>
+                        <option class="btn-primary">Renca</option>
+                        <option class="btn-primary" selected> </option>
+                    </select>  
+                </div>
+                <div class="form-group">
+                  <label for="fnacimiento">Fecha de nacimiento</label>
+                  <input type="date" class="form-control" name="fnacimiento" placeholder="Ingrese su fecha de nacimiento">  
+                </div>
+                <div class="form-group">
+                  <label for="correo">Correo</label>
+                  <input type="email" class="form-control" name="correo" placeholder="Ingrese su correo">   
+                </div>
+                <div class="form-group">
+                  <label for="ncontacto">Numero de Contacto</label>
+                  <input type="number" minlength="7" maxlength="12" class="form-control" name="ncontacto" placeholder="Ingrese su numero de contacto" >   
+                </div>
+                <acronym title="Limpiar" lang="es"> <button type="reset" class="btn btn-primary button">Limpiar</button></i></acronym>
+                <acronym title="Enviar" lang="es"> <button type="submit" class="btn btn-primary button">Enviar</button></i></acronym> 
+              </form>
+              <br>
+    <p1>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p1>
+    <p1>¿Ya tienes una cuenta?<a class="link" href="index.html "> Iniciar Sesion</a></p1>
+    </div>
+    <!--JS FILES-->
+    <script src="{% static 'principal/js/jquery-3.4.1.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="{% static 'principal/js/jquery.validate.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="{% static 'principal/js/bootstrap.js' %}" ></script>
+    <script src="{% static 'principal/js/app.js' %}"></script>
+</body>
+{% endblock contenido %}
