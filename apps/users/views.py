@@ -29,7 +29,7 @@ def register(request):
     form.fields['username'].help_text = None
     form.fields['password1'].help_text = None
     form.fields['password2'].help_text = None
-
+    
     # Si llegamos al final renderizamos el formulario
     return render(request, "users/register.html", {'form': form})
 
