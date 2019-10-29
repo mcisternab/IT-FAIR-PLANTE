@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django.urls import path
-from .views import Home,Registro,Info,Mapas,Principal,Juegos
+from .views import Home,Registro,Info,Mapas,Principal,Juegos,login
 
 
 urlpatterns =[
-    path('', Home, name="Home"), 
+    path('', login, name="login"), 
     path('Registro.html/', Registro, name="Registro"),
     path('principal.html/', Principal, name="Principal"),
     path('informacion.html/', Info, name="Info"),

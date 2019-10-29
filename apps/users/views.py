@@ -4,6 +4,7 @@ from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.contrib.auth import login as do_login
 from django.contrib.auth import logout as do_logout
 
+
 def register(request):
     # Creamos el formulario de autenticación vacío
     form = UserCreationForm()
@@ -24,6 +25,7 @@ def register(request):
                 return redirect('/')
 
     # Si queremos borramos los campos de ayuda
+    
     form.fields['username'].help_text = None
     form.fields['password1'].help_text = None
     form.fields['password2'].help_text = None
@@ -52,7 +54,7 @@ def login(request):
                 # Hacemos el login manualmente
                 do_login(request, user)
                 # Y le redireccionamos a la portada
-                return redirect('principal.html')
+                return redirect('/')
 
     # Si llegamos al final renderizamos el formulario
     return render(request, "users/login.html", {'form': form})
@@ -63,26 +65,3 @@ def logout(request):
     do_logout(request)
     # Redireccionamos a la portada
     return redirect('/')
-
-
-# Create your views here.
-
-def Home(request):# Creamos el formulario de autenticación vacío
-    return render(request, 'principal/principal.html')
-
-def Registro(request):
-    return render(request, 'principal/Registro.html')
-
-def Principal(request):
-    return render(request, 'principal/principal.html')
-
-def Info(request):
-    return render(request, 'principal/informacion.html')
-
-def Mapas(request):
-    return render(request, 'principal/mapas.html')
-
-def Juegos(request):
-    return render(request, 'principal/juegos.html')
-
-

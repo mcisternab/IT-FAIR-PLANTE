@@ -6,16 +6,17 @@
 {% load static %}
 <body class="bodyInicio">
     <div class="container" >
-        <h2 class="centrado">Inicio de sesión</h2>
-                <form action="principal.html" method="POST" id="Inicio">
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="correoUsuario" name="correoUsuario" placeholder="Correo ">   
-                  </div>
-                  <div class="form-group">
-                        <input type="password" height="50" class="form-control"id="contraseña" name="contraseña" placeholder="Contraseña">  
-                  </div>
-                  <acronym title="Enviar" lang="es"> <button type="submit" class="btn btn-primary button center">Ingresar</button></i></acronym> 
-                </form>
+        <h2>Iniciar sesión</h2>
+
+  <form method="POST">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <button type="submit">Login</button>
+  </form>
+
+  <hr />
+  
+  <a href="/register">Registrar usuario</a>
     <p1>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p1>
     <p1>¿No tienes una cuenta? <a class="link" href="Registro.html">Registrate </a></p1>
     </div>
