@@ -1,11 +1,15 @@
-{% extends 'principal/plantillaregistro.html'%}
+{% extends 'principal/plantillas.html'%}
+
 {% block contenido %}
+{% block header %}
+{% endblock header %}
+
 
 {% load static %}
 <body class="bodyInicio">
     <div class="container texto-blanco" >
         <h2>Registrate</h2>
-        <form action="Registro.html" method="POST" id="registro">
+        <form action="principal.html" method="POST" id="registro">
                 <div class="form-group">
                   <label for="nombre">Nombre </label>
                   <input type="text" height="50" class="form-control" name="nombre" placeholder="Ingrese su nombre">  
@@ -59,14 +63,10 @@
               </form>
               <br>
     <p1>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p1>
-    <p1>¿Ya tienes una cuenta?<a class="link" href="index.html "> Iniciar Sesion</a></p1>
+    <p1>¿Ya tienes una cuenta?<a class="link" href="index.html"> Iniciar Sesion</a></p1>
     </div>
-    <!--JS FILES-->
-    <script src="{% static 'principal/js/jquery-3.4.1.js' %}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-    <script src="{% static 'principal/js/jquery.validate.js' %}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="{% static 'principal/js/bootstrap.js' %}" ></script>
-    <script src="{% static 'principal/js/app.js' %}"></script>
-</body>
+{% block footer %}
+{% endblock footer %}
+{% block extrajs %}
+{% endblock extrajs %}
 {% endblock contenido %}

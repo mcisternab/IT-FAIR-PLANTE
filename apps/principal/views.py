@@ -8,11 +8,16 @@ def Home(request):
 def Registro(request):
     return render(request, 'principal/Registro.html')
 
+def Principal(request):
+    return render(request, 'principal/principal.html')
+
 def Info(request):
     return render(request, 'principal/informacion.html')
 
 def Mapas(request):
     return render(request, 'principal/mapas.html')
 
-def Inicio(request):
-    return render(request, 'principal/iniciosesion.html')
+def Juegos(request):
+    return render(request, 'principal/juegos.html')
+
+

@@ -1,7 +1,8 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    {% load static %}
+    {% block extrahead %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,51 +16,55 @@
     <link rel="stylesheet" href="{% static 'principal/css/hint.min.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
     <link rel="shortcut icon" href="{% static 'principal/img/logo.png' %}">
+    {% endblock extrahead %}
 </head>
 <body>
-  <Header>
-    <nav class="navbar navbar-expand-lg navbar-dark header">
-      <a class="navbar-brand " href="#">
-        <acronym  title="Plante" lang="es"> <img src="{% static 'principal/img/logo.png' %}" alt="logo" height="50"></acronym>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Inicio"">
-            <a class="nav-link" href="principal.html">
-              <i class="fas fa-2x fa-home"></i>  Inicio
+    {% block header %}
+    <Header>
+        <nav class="navbar navbar-expand-lg navbar-dark header">
+            <a class="navbar-brand " href="#">
+            <acronym  title="Plante" lang="es"> <img src="{% static 'principal/img/logo.png' %}" alt="logo" height="50"></acronym>
             </a>
-          </li>
-          <li class="texto blanco nav-item active hint--bottom hint--info hint--rounded hint--bounce" aria-label="Información">
-            <a class="nav-link" style="color:#008BDB;" href="informacion.html">
-              <i class="fas fa-2x fa-info-circle"></i> Información
-            </a>
-          </li>
-          <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Formulario">
-            <a class="nav-link" href="mapas.html">
-              <i class="fas fa-2x fa-map-marked-alt"></i> Ubicaciones
-            </a>
-          </li>
-          <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Juego"">
-            <a class="nav-link" href="juego.html">
-              <i class="fas fa-2x fa-gamepad"></i> Juegos
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </Header>
-	
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Inicio"">
+                <a class="nav-link" href="principal.html">
+                    <i class="fas fa-2x fa-home"></i>  Inicio
+                </a>
+                </li>
+                <li class="texto blanco nav-item active hint--bottom hint--info hint--rounded hint--bounce" aria-label="Información">
+                <a class="nav-link" style="color:#008BDB;" href="informacion.html">
+                    <i class="fas fa-2x fa-info-circle"></i> Información
+                </a>
+                </li>
+                <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Formulario">
+                <a class="nav-link" href="mapas.html">
+                    <i class="fas fa-2x fa-map-marked-alt"></i> Ubicaciones
+                </a>
+                </li>
+                <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Juego"">
+                <a class="nav-link" href="juego.html">
+                    <i class="fas fa-2x fa-gamepad"></i> Juegos
+                </a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </Header>
+    {% endblock header %}
+
     {% block contenido %}
 
     {% endblock contenido %}
 
+    {% block footer %}
     <footer>
         <div class="row footer ">
             <div class="col-xs-12 col-sm-4 no-xs">
-                <h3 class="texto-blanco"><acronym title="Plante" lang="es"> <img src="img/logo.png" alt="logo" height="50"></acronym>Organización Plante</h3>
+                <h3 class="texto-blanco"><acronym title="Plante" lang="es"> <img src="{% static 'principal/img/logo.png' %}" alt="logo" height="50"></acronym>Organización Plante</h3>
                 <li class="row footer">
                     <a class="nav-link " href="terminos.html">Términos y condiciones</a>
                 </li>
@@ -95,14 +100,18 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </footer>  
+         </div>
+    </footer>
+    {% endblock footer %}
+
+    {% block extrajs %}
     <!--JS FILES-->
-    <script src="{% static 'principal/js/jquery-3.4.1.js' %}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-    <script src="{% static 'principal/js/jquery.validate.js' %}"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="{% static 'principal/js/bootstrap.js' %}" ></script>
-    <script src="{% static 'principal/js/app.js' %}"></script>
-  </body>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
+    {% endblock extrajs %}
+</body>
 </html>

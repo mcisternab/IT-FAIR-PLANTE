@@ -1,5 +1,7 @@
-{% extends 'principal/plantilla.html'%}
+{% extends 'principal/plantillas.html'%}
 {% block contenido %}
+{% block header %}
+{% endblock header %}
 
 {% load static %}
 <body class="bodyInicio">
@@ -25,4 +27,6 @@
     <script src="{% static 'principal/js/bootstrap.js' %}" ></script>
     <script src="{% static 'principal/js/app.js' %}"></script>
 </body>
+{% block footer %}
+{% endblock footer %}
 {% endblock contenido %}
