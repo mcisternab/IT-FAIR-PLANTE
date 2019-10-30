@@ -2,24 +2,20 @@
 {% block contenido %}
 {% block header %}
 {% endblock header %}
-
 {% load static %}
+
 <body class="bodyInicio">
     <div class="container" >
-        <h2>Iniciar sesión</h2>
-
-  <form method="POST">
-    {{ form.as_p }}
-    {% csrf_token %}
-    <button type="submit">Login</button>
-  </form>
-
-  <hr />
-  
-  
-    <p1>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p1>
-    <p1>¿No tienes una cuenta? <a href="/register">Registrate</a></p1>
+        <h2 class="centrado">Inicio de sesión</h2>
+        <form method="POST">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary button">Ingresar</button>
+        </form>
+        <p1>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p1>
+        <p1>¿No tienes una cuenta? <a href="/registro">Registrate</a></p1>
     </div>
+
     <!--JS FILES-->
     <script src="{% static 'principal/js/jquery-3.4.1.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
@@ -28,6 +24,7 @@
     <script src="{% static 'principal/js/bootstrap.js' %}" ></script>
     <script src="{% static 'principal/js/app.js' %}"></script>
 </body>
+
 {% block footer %}
 {% endblock footer %}
 {% endblock contenido %}

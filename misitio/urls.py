@@ -21,7 +21,7 @@ from apps.users import views
 urlpatterns = [
     path('',include('apps.principal.urls')),
     # Sección para usuarios
-    path('register', views.register),
+    path('registro', views.register),
     path('login', views.login),
     path('logout', views.logout),
     path('admin/', admin.site.urls),

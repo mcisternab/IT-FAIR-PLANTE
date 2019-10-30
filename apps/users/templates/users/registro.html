@@ -4,30 +4,22 @@
 {% endblock header %}
 
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Registrar usuario</title>
-  </head>
-  <body>
+  <body class="bodyInicio">
+      <div class="container">
   <h2>Registrar usuario</h2>
 
   <form method="POST">
     {{ form.as_p }}
     {% csrf_token %}
-    <button type="submit">Registrar</button>
+    <button type="submit" class="btn btn-primary button">Registrar</button>
   </form>
   <p1>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p1>
   <p1>¿Ya tienes una cuenta?<a href="/login">Iniciar sesión</a></p1>
 
   <hr />
 
-  
+  </div>
   </body>
-</html>
 {% block footer %}
 {% endblock footer %}
 {% endblock contenido %}

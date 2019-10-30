@@ -31,7 +31,7 @@ def register(request):
     form.fields['password2'].help_text = None
     
     # Si llegamos al final renderizamos el formulario
-    return render(request, "users/register.html", {'form': form})
+    return render(request, "users/registro.html", {'form': form})
 
 
 def login(request):
