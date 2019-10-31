@@ -7,9 +7,16 @@
 <body class="bodyInicio">
     <div class="container" >
         <h2 class="centrado">Inicio de sesión</h2>
-        <form method="POST">
-            {{ form.as_p }}
+        <form method="POST" id="registro">
             {% csrf_token %}
+            <div class="form-group">
+                <label for="nombre">Nombre </label>
+                <input type="text" height="50" class="form-control" name="username" placeholder="Ingrese su nombre">  
+            </div>
+            <div class="form-group">
+                <label>Contraseña:</label>
+                <input type="password" class="form-control"  name="password" minlength="6" maxlength="20" placeholder="Ingrese su contraseña">
+            </div>
             <button type="reset" class="btn btn-primary button">Limpiar</button>
             <button type="submit" class="btn btn-primary button">Ingresar</button>
         </form>

@@ -2,7 +2,7 @@ $(document).ready(function(){
     $("#registro").validate({
         errorClass: 'is-invalid',
         rules:{
-            nombre:{
+            username:{
                 required:true
             },
             apellido:{
@@ -29,7 +29,7 @@ $(document).ready(function(){
            
         },
         messages:{
-            nombre:{
+            username:{
                 required:"Se debe ingresar el nombre"
             },
             apellido:{
@@ -85,7 +85,7 @@ $(document).ready(function(){
     $("#Inicio").validate({
         errorClass: 'is-invalid',
         rules:{
-            correoUsuario:{
+            username:{
                 required: true,
                 email: true
             },
@@ -94,7 +94,7 @@ $(document).ready(function(){
             }
         },
         messages:{
-            correoUsuario:{
+            username:{
                 required:"¡Yo esperaba una dirección de correo!",
                 email: "¡La dirección de correo no es válida!"
             },
