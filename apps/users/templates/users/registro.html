@@ -8,9 +8,10 @@
       <div class="container">
   <h2>Registrar usuario</h2>
 
-  <form method="POST">
+  <form method="POST" class="form-group">
     {{ form.as_p }}
     {% csrf_token %}
+    <button type="reset" class="btn btn-primary button">Limpiar</button>
     <button type="submit" class="btn btn-primary button">Registrar</button>
   </form>
   <p1>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p1>

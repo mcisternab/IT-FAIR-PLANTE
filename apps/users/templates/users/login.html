@@ -10,6 +10,7 @@
         <form method="POST">
             {{ form.as_p }}
             {% csrf_token %}
+            <button type="reset" class="btn btn-primary button">Limpiar</button>
             <button type="submit" class="btn btn-primary button">Ingresar</button>
         </form>
         <p1>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p1>
