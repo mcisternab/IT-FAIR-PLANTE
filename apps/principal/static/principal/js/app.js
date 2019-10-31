@@ -30,7 +30,7 @@ $(document).ready(function(){
         },
         messages:{
             username:{
-                required:"Se debe ingresar el nombre"
+                required:"Se debe ingresar el nombre de usuario"
             },
             apellido:{
                 required:"Se debe ingresar el apellido"
