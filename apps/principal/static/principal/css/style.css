@@ -168,9 +168,13 @@ h2{
     color: #3B7FFF;
     
 }
+.h2{
+    font-family: 'Anton', sans-serif;
+    color: #3B7FFF;
+}
 h3{
-    font-family: 'Cinzel Decorative', cursive;
-    color: beige;
+    font-family: 'Jomolhari', serif;
+    color: #BD0939;
 }
 p{
     font-family: 'Viga', sans-serif;
