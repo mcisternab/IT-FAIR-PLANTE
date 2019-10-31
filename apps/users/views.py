@@ -3,14 +3,14 @@ from django.contrib.auth import authenticate
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.contrib.auth import login as do_login
 from django.contrib.auth import logout as do_logout
-
+from .forms import UCFWithEmail, AFWithEmail
 
 def register(request):
     # Creamos el formulario de autenticación vacío
-    form = UserCreationForm()
+    form = UCFWithEmail()
     if request.method == "POST":
         # Añadimos los datos recibidos al formulario
-        form = UserCreationForm(data=request.POST)
+        form = UCFWithEmail(data=request.POST)
         # Si el formulario es válido...
         if form.is_valid():
 
@@ -29,6 +29,7 @@ def register(request):
     form.fields['username'].help_text = None
     form.fields['password1'].help_text = None
     form.fields['password2'].help_text = None
+    form.fields['email'].help_text = None
     
     # Si llegamos al final renderizamos el formulario
     return render(request, "users/registro.html", {'form': form})
