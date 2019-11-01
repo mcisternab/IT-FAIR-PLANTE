@@ -52,10 +52,9 @@ $(document).ready(function(){
             username:{
                 required: true
             },
-            password: "required",
+            password1: "required",
             password2: {
-            required: true,
-            equalTo: "#password"
+            required: true
             },
             email:{
                 required: true,
@@ -75,13 +74,12 @@ $(document).ready(function(){
             username:{
                 required:"¡Yo esperaba una dirección de correo!"
             },
-            password: {
+            password1: {
                 required: 'Falta ingresar contraseña',
                 minlength: 'Largo insuficiente'
               },
               password2: {
                 required: 'Falta reingresar la contraseña',
-                equalTo: 'Las contraseñas ingresadas no coinciden',
                 minlength: 'Largo insuficiente'
         
             },
