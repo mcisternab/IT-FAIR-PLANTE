@@ -40,8 +40,8 @@
         </div>
     </nav>
 </Header>
-<div class="containerPrincipal texto-blanco centrado">
-<span class="texto-borde" style="-webkit-text-fill-color: rgb(63, 0, 238); font-size: 60px"> <p>bienvenido/a <b>{{request.user.username}}</b>, Gracias por registrarse.</p> </span>
+<div class="containerPrincipal texto-blanco centrado" style="background-color: rgb(14, 189, 37);border:2px solid black;">
+<span class="texto-borde" style="-webkit-text-fill-color: rgb(170, 6, 6); -webkit-text-stroke: 1px rgb(238, 255, 0); font-size: 60px"> <p>Bienvenid@ <b>{{request.user.username}}</b>,<br> Gracias por registrarse.</p> </span>
 </div>
 <div class="bd-example" >
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -78,38 +78,38 @@
       </div>
     </div>
 
-
-
-   <div class="row containerPrincipal texto-blanco centrado ">
+<div class="row containerPrincipal texto-blanco centrado" style="background-color: chartreuse;">
    
       <div class="row" style="color: black; font-family: 'Slabo 30px', serif;">
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-4 col-sm-12 ">
               <div class="card mb-4 shadow-sm">
                 <h1 style="font-family: 'Lilita One', cursive;">¿Que es Plante?</h1>
-                <p>Plante es una pagina que informa sobre reciclaje y como ayudar al medio ambiente.</p>
+                <p>Plante es una organización que fomenta el reciclaje y el cuidado hacia el medio ambiente.</p>
                 <img src="{% static 'principal/img/imgen3.jpg' %}" alt="Imágen Plante">
                 <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Dicha organización es creada para incentivar e informar acerca de la reutilización de la basura y a generar consciencia sobre el medio ambiente.</p>
                 </div>
               </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="card mb-4 shadow-sm">
               <h1 style="font-family: 'Lilita One', cursive;">¿Que nos interesa?</h1>
-              <p>A Plante lo que más le interesa es el medio ambiente y por ende fomentar el reciclaje.</p>
+              <p>A Plante lo que más le interesa es que a través de esta página comience un gran proyecto.</p>
               <img src="{% static 'principal/img/imgen3.jpg' %}" alt="Imágen Plante">
               <div class="card-body">
-                <p class="card-text">Es por eso que Plante realiza diferentes cosas con tal de ayudar al medio ambiente y a las futuras generaciones.</p>
+                <p class="card-text">Es por eso que Plante realiza diferentes cosas con tal de ayudar al medio ambiente, 
+                  como por ejemplo: Enseñar sobre reciclaje, dar información de puntos de reciclaje, motivar a las personas a reciclar, entre otras cosas.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
               <div class="card mb-4 shadow-sm">
                 <h1 style="font-family: 'Lilita One', cursive;">¿Como ayudar?</h1>
-                <p>Puedes ayudar compartiendo nuestra página.</p>
+                <p>Puedes ayudar de muchas maneras, una de ellas es compartiendo nuestra página web a diferentes personas.</p>
                 <img src="{% static 'principal/img/imgen3.jpg' %}" alt="Imágen Plante">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Puedes compartirla a personas que tu sientas que no conozcan sobre estos temas,
+                      o personas que sientas que estén interesadas en unirse a nuestra comunidad y ayudar al medio ambiente.</p>
                 </div>
               </div>
          </div>

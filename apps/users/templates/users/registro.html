@@ -8,12 +8,10 @@
   <div class="container texto-blanco" >
   <h2 class="h2">Registro de usuario</h2>
 
-  <form method="POST" class="form-group" id="registro">
+  <form method="POST" class="form-group">
     {% csrf_token %}
-    {{ form.as_p }}
     <div class="form-group">
-      <label for="email">Correo</label>
-      <input type="email" class="form-control" name="email" placeholder="Ingrese su correo">   
+    {{ form.as_p }}
     </div>
     <button type="reset" class="btn btn-primary button">Limpiar</button>
     <button type="submit" class="btn btn-primary button">Registrar</button>

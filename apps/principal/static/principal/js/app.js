@@ -52,7 +52,7 @@ $(document).ready(function(){
             username:{
                 required: true
             },
-            password1: "required",
+            password: "required",
             password2: {
             required: true
             },
@@ -74,7 +74,7 @@ $(document).ready(function(){
             username:{
                 required:"¡Yo esperaba una dirección de correo!"
             },
-            password1: {
+            password: {
                 required: 'Falta ingresar contraseña',
                 minlength: 'Largo insuficiente'
               },

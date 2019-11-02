@@ -88,20 +88,9 @@ footer{
         margin-top: 20px;
     }
 }
-.boton{
-    padding: 10px;
-    background-color: #ffffff;
-    color: #000000;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 10px;
-    border: 2px solid #000000;
-}
 .img-margin-top{
     margin-top: 10px;
 }
-
-
 body{
     background: url(../img/fondo.jpg);
     background-size: cover;
@@ -109,7 +98,6 @@ body{
     margin: 0px;
     padding: 0px;
 }
-
 .container {
     background: rgba(0,0,0,.7);
     width: 100%;
@@ -154,10 +142,6 @@ body{
 label.is-invalid{
     color: yellow;
 }
-.buttonComuna{
-    background-color: dodgerblue;
-    border:2px solid black;
-}
 h1{
     font-family: 'Patua+One', sans-serif;
     color: #3B7FFF;
@@ -166,7 +150,6 @@ h1{
 h2{
     font-family: 'Luckiest Guy', cursive;
     color: #3B7FFF;
-    
 }
 .h2{
     font-family: 'Anton', sans-serif;
@@ -196,7 +179,7 @@ p1{
     font-family: impact;
     font-size: 46px;
     text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
-    -webkit-text-fill-color: chartreuse;;
+    -webkit-text-fill-color: chartreuse;
     -webkit-text-stroke: 4px black;
 }
 #linav{
@@ -215,4 +198,7 @@ p1{
     border-bottom: 10px solid transparent;
     opacity: .5;
     transition: opacity .6s ease;
+}
+.fondoVerde{
+    background-color:  chartreuse;
 }
