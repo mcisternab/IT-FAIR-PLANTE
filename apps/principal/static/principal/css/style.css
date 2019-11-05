@@ -136,9 +136,6 @@ body{
     margin: 10%;
     padding: 0px;
 }
-.bodyJuego{
-    background: url(../img/fondo4.jpg);
-}
 label.is-invalid{
     color: yellow;
 }
@@ -201,4 +198,10 @@ p1{
 }
 .fondoVerde{
     background-color:  chartreuse;
+}
+img {
+    max-width: 100%
+}
+iframe{
+    max-width: 100%
 }

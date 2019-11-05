@@ -21,25 +21,35 @@
                 <i class="fas fa-2x fa-info-circle"></i> Información
             </a>
             </li>
-            <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Formulario">
+            <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Mapas">
             <a class="nav-link" href="/mapas.html">
                 <i class="fas fa-2x fa-map-marked-alt"></i> Ubicaciones
             </a>
             </li>
-            <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Juego">
+            <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Juegos">
             <a class="nav-link" href="/juegos.html">
                 <i class="fas fa-2x fa-gamepad"></i> Juegos
             </a>
             </li>
-            <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Salir">
-              <a class="nav-link"  href="/logout">
+            <li class="nav-item dropdown texto blanco nav-item hint--right hint--info hint--rounded hint--bounce" aria-label="Ajustes" >
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-2x fa-user-cog"></i> Configuración </a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01" style="background-color: #008BDB;">
+                <a class="dropdown-item" href="#">
+                    <i class="far fa-2x fa-user"></i> Perfil
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-2x fa-unlock-alt"></i> Cambiar contraseña
+                </a>
+                <a class="dropdown-item" href="/logout">
                   <i class="fas fa-2x fa-sign-out-alt"></i> Cerrar sesión
-              </a>
+                </a>
+              </div>
             </li>
         </ul>
-        </div>
-    </nav>
+        </div>   
+    </nav>   
 </Header>
+
 <div class="containerPrincipal texto-blanco centrado" style="background-color: rgb(14, 189, 37);border:2px solid black;">
 <span class="texto-borde" style="-webkit-text-fill-color: rgb(170, 6, 6); -webkit-text-stroke: 1px rgb(238, 255, 0); font-size: 60px"> <p>Bienvenid@ <b>{{request.user.username}}</b>,<br> Gracias por registrarse.</p> </span>
 </div>
@@ -85,7 +95,7 @@
               <div class="card mb-4 shadow-sm">
                 <h1 style="font-family: 'Lilita One', cursive;">¿Que es Plante?</h1>
                 <p>Plante es una organización que fomenta el reciclaje y el cuidado hacia el medio ambiente.</p>
-                <img src="{% static 'principal/img/imgen3.jpg' %}" alt="Imágen Plante">
+                    <img src="{% static 'principal/img/equipo.jpg' %}" alt="Imágen Plante">
                 <div class="card-body">
                 <p class="card-text">Dicha organización es creada para incentivar e informar acerca de la reutilización de la basura y a generar consciencia sobre el medio ambiente.</p>
                 </div>
@@ -95,8 +105,11 @@
             <div class="card mb-4 shadow-sm">
               <h1 style="font-family: 'Lilita One', cursive;">¿Que nos interesa?</h1>
               <p>A Plante lo que más le interesa es que a través de esta página comience un gran proyecto.</p>
-              <img src="{% static 'principal/img/imgen3.jpg' %}" alt="Imágen Plante">
+                 <br> 
+                 <img src="{% static 'principal/img/imgen3.jpg' %}" alt="Imágen árbol">
               <div class="card-body">
+                <br>
+                <br>
                 <p class="card-text">Es por eso que Plante realiza diferentes cosas con tal de ayudar al medio ambiente, 
                   como por ejemplo: Enseñar sobre reciclaje, dar información de puntos de reciclaje, motivar a las personas a reciclar, entre otras cosas.</p>
               </div>
@@ -106,8 +119,9 @@
               <div class="card mb-4 shadow-sm">
                 <h1 style="font-family: 'Lilita One', cursive;">¿Como ayudar?</h1>
                 <p>Puedes ayudar de muchas maneras, una de ellas es compartiendo nuestra página web a diferentes personas.</p>
-                
+                    <img src="{% static 'principal/img/ayudar.png' %}" alt="Imágen ayuda"> 
                 <div class="card-body">
+                  <br>
                   <p class="card-text">Puedes compartirla a personas que tu sientas que no conozcan sobre estos temas,
                       o personas que sientas que estén interesadas en unirse a nuestra comunidad y ayudar al medio ambiente.</p>
                 </div>

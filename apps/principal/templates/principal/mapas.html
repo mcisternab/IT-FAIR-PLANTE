@@ -1,42 +1,56 @@
 {% extends 'principal/plantillaPrincipal.html'%}
-
-
 {% load static %}
 {% block contenido %}
+
 <Header>
-        <nav class="navbar navbar-expand-lg navbar-dark header">
-            <a class="navbar-brand " href="#">
-            <acronym  title="Plante" lang="es"> <img src="{% static 'principal/img/logo.png' %}" alt="logo" height="50"></acronym>
+    <nav class="navbar navbar-expand-lg navbar-dark header">
+        <a class="navbar-brand " href="#">
+        <acronym  title="Plante" lang="es"> <img src="{% static 'principal/img/logo.png' %}" alt="logo" height="50"></acronym>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Inicio">
+            <a class="nav-link" href="/principal.html">
+                <i class="fas fa-2x fa-home"></i>  Inicio
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Inicio">
-                <a class="nav-link"  href="/principal.html">
-                    <i class="fas fa-2x fa-home"></i>  Inicio
+            </li>
+            <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Información">
+            <a class="nav-link" href="/informacion.html">
+                <i class="fas fa-2x fa-info-circle"></i> Información
+            </a>
+            </li>
+            <li class="texto blanco nav-item active hint--bottom hint--info hint--rounded hint--bounce" aria-label="Mapas">
+            <a class="nav-link" style="color:#008BDB;" href="/mapas.html">
+                <i class="fas fa-2x fa-map-marked-alt"></i> Ubicaciones
+            </a>
+            </li>
+            <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Juegos">
+            <a class="nav-link" href="/juegos.html">
+                <i class="fas fa-2x fa-gamepad"></i> Juegos
+            </a>
+            </li>
+            <li class="nav-item dropdown texto blanco nav-item hint--right hint--info hint--rounded hint--bounce" aria-label="Ajustes" >
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-2x fa-user-cog"></i> Configuración </a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01" style="background-color: #008BDB;">
+                <a class="dropdown-item" href="#">
+                    <i class="far fa-2x fa-user"></i> Perfil
                 </a>
-                </li>
-                <li class="texto blanco nav-item  hint--bottom hint--info hint--rounded hint--bounce" aria-label="Información">
-                <a class="nav-link" href="/informacion.html">
-                    <i class="fas fa-2x fa-info-circle"></i> Información
+                <a class="dropdown-item" href="#">
+                    <i class="fas fa-2x fa-unlock-alt"></i> Cambiar contraseña
                 </a>
-                </li>
-                <li class="texto blanco nav-item active hint--bottom hint--info hint--rounded hint--bounce" aria-label="Formulario">
-                <a class="nav-link" style="color:#008BDB;" href="/mapas.html">
-                    <i class="fas fa-2x fa-map-marked-alt"></i> Ubicaciones
+                <a class="dropdown-item" href="/logout">
+                    <i class="fas fa-2x fa-sign-out-alt"></i> Cerrar sesión
                 </a>
-                </li>
-                <li class="texto blanco nav-item hint--bottom hint--info hint--rounded hint--bounce" aria-label="Juego">
-                <a class="nav-link" href="/juegos.html">
-                    <i class="fas fa-2x fa-gamepad"></i> Juegos
-                </a>
-                </li>
-            </ul>
-            </div>
-        </nav>
-    </Header>
+                </div>
+            </li>
+        </ul>
+        </div>   
+    </nav>   
+</Header>
+
 <div class="containerPrincipal texto-blanco centrado">
     <h1>Mapas principales de puntos de reciclaje de Santiago</h1>
     <p>En este punto te mostraremos los distintos puntos de reciclaje según tu comuna</p>
@@ -44,19 +58,19 @@
 
 
 <div class="row centrado">
-    <div class="col-md-4">
-        <div class="card mb-4 shadow-sm fondoVerde">
+    <div class="col-lg-4 md-6 sm-6 xs-12">
+        <div class="card mb-4 shadow-sm">
             <H3>QUILICURA</H3> 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26648.40797730628!2d-70.70150393859514!3d-33.39583370743948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c6bd78cef51d%3A0x9eea6c2072bc09d1!2sReciclados%20Industriales%20S.A.!5e0!3m2!1ses!2scl!4v1572281647739!5m2!1ses!2scl" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" alt="Cargnado"></iframe>            
         </div>
     </div>
-    <div class="col-md-4" >
+    <div class="col-lg-4 md-6 sm-6 xs-12" >
         <div class="card mb-4 shadow-sm">
             <H3>LAS CONDES</H3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106547.15427146752!2d-70.60846624302168!3d-33.43370862584617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfaea868e4ea60f05!2spunto%20limpio!5e0!3m2!1ses!2scl!4v1572283435591!5m2!1ses!2scl" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>   
         </div>
     </div>
-    <div class="col-md-4 fondoVerde">
+    <div class="col-lg-4 md-6 sm-6 xs-12">
         <div class="card mb-4 shadow-sm">
             <H3>RENCA</H3> 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53287.68268481343!2d-70.68750234018314!3d-33.410723752117796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8bec74f5bf01c225!2sPunto%20Limpio%20TriCiclos%20-%20Sodimac%20Oficina%20Renca!5e0!3m2!1ses!2scl!4v1572302580479!5m2!1ses!2scl" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>            
