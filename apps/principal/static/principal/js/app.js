@@ -78,8 +78,9 @@ $(document).ready(function(){
                 required: 'Falta ingresar contraseña',
                 minlength: 'Largo insuficiente'
               },
-              password2: {
+            password2: {
                 required: 'Falta reingresar la contraseña',
+                equalTo: 'Las contraseñas ingresadas no coinciden',
                 minlength: 'Largo insuficiente'
         
             },
@@ -87,15 +88,6 @@ $(document).ready(function(){
                 required:"¡Yo esperaba una dirección de correo!",
                 email: "¡La dirección de correo no es válida!"
             },
-            fnacimiento:{
-                required: "Se debe ingresar fecha de nacimiento"
-            },
-            Comuna:{
-                required: "Le falta ingresar la comuna"
-            },
-            ncontacto:{
-                required: "Le falta ingresar número de contacto"
-            }
            
 
         }
