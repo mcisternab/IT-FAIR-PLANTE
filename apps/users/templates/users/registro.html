@@ -10,7 +10,22 @@
 
   <form method="POST" class="form-group">
     {% csrf_token %}
-    {{ form.as_p }}
+    <div class="form-group">
+      <label for="nombre">Nombre </label>
+      <input type="text" height="50" class="form-control" name="username" placeholder="Ingrese su nombre">  
+    </div>
+    <div class="form-group">
+      <label>Contraseña:</label>
+      <input type="password" class="form-control" name="password1" minlength="6" maxlength="20" placeholder="Ingrese su contraseña">
+    </div>
+    <div class="form-group">
+      <label>Reingresa contraseña: </label>
+      <input type="password" class="form-control" name="password2" minlength="6" maxlength="20" placeholder="Ingrese nuevamente su contraseña">
+    </div>
+    <div class="form-group">
+      <label for="correo">Correo</label>
+      <input type="email" class="form-control" name="email" placeholder="Ingrese su correo">   
+    </div>
     <button type="reset" class="btn btn-primary button">Limpiar</button>
     <button type="submit" class="btn btn-primary button">Registrar</button>
   </form>
