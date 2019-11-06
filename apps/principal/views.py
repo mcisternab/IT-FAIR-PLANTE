@@ -61,5 +61,17 @@ def Juegos(request):
 def Perfil(request):
     return render(request, 'users/perfil.html')
 
+def Complete(request):
+    return render(request, 'registration/password_reset_complete.html')
 
+def Confirm(request):
+    return render(request, 'registration/password_reset_confirm.html')
 
+def Done(request):
+    return render(request, 'registration/password_reset_done.html')
+
+def Email(request):
+    return render(request, 'registration/password_reset_email.html')
+
+def Form(request):
+    return render(request, 'registration/password_reset_form.html')
