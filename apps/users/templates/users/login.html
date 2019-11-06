@@ -5,7 +5,7 @@
 {% load static %}
 
 <body class="bodyInicio">
-    <div class="container texto-blanco" >
+    <div class="containerInicio texto-blanco" >
         <h2 class="h2 centrado">Inicio de sesión</h2>
         <form method="POST" id="login">
             {% csrf_token %}
@@ -22,6 +22,7 @@
         </form>
         <p1>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p1>
         <p1>¿No tienes una cuenta? <a href="/registro">Registrate</a></p1>
+        <a href="{% url 'password_reset' %}">olvide</a>
         <p class="centrado">Plante© 2019</p>
     </div>
 </body>

@@ -59,3 +59,4 @@ def Juegos(request):
     return render(request, 'principal/juegos.html')
 
 
+
