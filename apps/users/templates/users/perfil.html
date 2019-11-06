@@ -1,0 +1,60 @@
+{% extends 'principal/plantillaPrincipal.html'%}
+{% block contenido %}
+{% block header %}
+{% endblock header %}
+{% load static %}
+
+<body>
+    <div class="containerInicio texto-blanco centrado">
+    <form>
+    <h1>Aquí se visualizan tus datos de usuarios</h1>
+    <label for="">Nombre de usario: {{request.user.username}} </label>
+    <br>
+    <label for="">Nombre: </label>
+    <br>
+    <label for="">Apellido: </label>
+    <br>
+    <label for="">Correo electrónico: {{request.user.email}} </label>
+    <br>
+    <label for="">Teléfono: </label>
+    <br>
+    <label for="">Comuna: </label>
+    <br>
+    <label for="">Fecha de nacimiento: </label>
+    </form>
+    <a href="/principal.html"><i class="fas fa-5x fa-arrow-circle-left"></i></a>
+    </div>  
+</body>
+
+<div class="form-group">
+        <label for="imagen">Seleccione una foto de perfil</label>
+        <input name="archivo1" type="file" class="form-control" id="archivo1">
+      </div>
+      <div class="form-group">
+          <label for="Comuna">Comuna </label>
+          <br>
+          <select name="Comuna" class="form-control selectpicker " >
+              <option class="btn-primary" >Huechuraba</option>
+              <option class="btn-primary">Las condes</option>
+              <option class="btn-primary">Renca</option>
+              <option class="btn-primary">Quilicura</option>
+              <option class="btn-primary">Conchalí</option>
+              <option class="btn-primary">Providencia</option>
+              <option class="btn-primary">Macul</option>
+              <option class="btn-primary">Ñuñoa</option>
+              <option class="btn-primary">Renca</option>
+              <option class="btn-primary" selected> </option>
+          </select>  
+      </div>
+      <div class="form-group">
+        <label for="fnacimiento">Fecha de nacimiento</label>
+        <input type="date" class="form-control" name="fnacimiento" placeholder="Ingrese su fecha de nacimiento">  
+      </div>
+      <div class="form-group">
+        <label for="ncontacto">Numero de Contacto</label>
+        <input type="number" minlength="7" maxlength="12" class="form-control" name="ncontacto" placeholder="Ingrese su numero de contacto" >   
+      </div>
+      
+{% block footer %}
+{% endblock footer %}
+{% endblock contenido %}

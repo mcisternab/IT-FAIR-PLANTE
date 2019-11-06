@@ -8,11 +8,11 @@
   <div class="containerInicio texto-blanco" >
   <h2 class="h2">Registro de usuario</h2>
 
-  <form method="POST" class="form-group">
+  <form method="POST" class="form-group" id="registro">
     {% csrf_token %}
     <div class="form-group">
-      <label for="nombre">Nombre </label>
-      <input type="text" height="50" class="form-control" name="username" placeholder="Ingrese su nombre">  
+      <label for="nombre">Nombre de usuario:</label>
+      <input type="text" height="50" class="form-control" name="username" placeholder="Ingrese su nombre de usuario">  
     </div>
     <div class="form-group">
       <label>Contraseña:</label>

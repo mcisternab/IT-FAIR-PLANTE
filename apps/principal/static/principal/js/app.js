@@ -5,10 +5,8 @@ $(document).ready(function(){
             username:{
                 required:true
             },
-            password: "required",
-            password2: {
-            required: true,
-            equalTo: "#password"
+            password:{
+                required: true
             }
            
         },
@@ -19,11 +17,7 @@ $(document).ready(function(){
             password: {
                 required: 'Falta ingresar la contraseña',
                 minlength: 'Largo insuficiente'
-              },
-              password2: {
-                required: 'Falta reingresar la contraseña',
-                equalTo: 'Las contraseñas ingresadas no coinciden',
-                minlength: 'Largo insuficiente'
+              }
         
             }
            
@@ -38,7 +32,7 @@ $("#login").submit(function(){
             type: 'error',
             title: 'Oops...',
             text: 'Te faltaron ingresar algunos datos!',
-            footer: '<a href>¿Haz olvidado tu contraseña?</a>'
+            footer: <a href='/registro'>¿No te has registrado?</a>
           })
     }
     return false
@@ -52,29 +46,21 @@ $(document).ready(function(){
             username:{
                 required: true
             },
-            password: "required",
+            password1: "required",
             password2: {
-            required: true
+            required: true,
+            equalTo: "#password1"
             },
             email:{
                 required: true,
                 email: true
-            },
-            fnacimiento:{
-                required:true
-            },
-            Comuna:{
-                required:true
-            },
-            ncontacto:{
-                required:true
             }
         },
         messages:{
             username:{
                 required:"¡Yo esperaba una dirección de correo!"
             },
-            password: {
+            password1: {
                 required: 'Falta ingresar contraseña',
                 minlength: 'Largo insuficiente'
               },
