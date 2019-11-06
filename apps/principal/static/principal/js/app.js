@@ -6,21 +6,19 @@ $(document).ready(function(){
                 required:true
             },
             password:{
-                required: true
+                required:true
             }
            
         },
         messages:{
             username:{
-                required:"Se debe ingresar el nombre de usuario"
+                required:"Se debe ingresar el nombre"
             },
-            password: {
-                required: 'Falta ingresar la contraseña',
-                minlength: 'Largo insuficiente'
-              }
-        
+            password:{
+                required:"¡Yo esperaba una dirección de correo!"
             }
            
+
         }
     })
 })
@@ -32,7 +30,7 @@ $("#login").submit(function(){
             type: 'error',
             title: 'Oops...',
             text: 'Te faltaron ingresar algunos datos!',
-            footer: <a href='/registro'>¿No te has registrado?</a>
+            footer: '<a href>Tienes algun problema?</a>'
           })
     }
     return false
