@@ -1,0 +1,57 @@
+{% extends 'principal/plantillaPrincipal.html'%}
+{% block contenido %}
+{% block header %}
+{% endblock header %}
+
+{% load static %}
+  <body class="bodyInicio">
+  <div class="containerInicio texto-blanco" >
+  <h2 class="h2" style="color: red;">Registro de administrador</h2> <i class="fas fa-user"></i> <i class="fas fa-user-tie"></i>
+
+  <form method="POST" class="form-group" id="registro">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="nombre">Nombre de usuario:</label>
+      <input type="text" height="50" class="form-control" name="username" placeholder="Ingrese su nombre de usuario">  
+    </div>
+    <div class="form-group">
+      <label>Contraseña:</label>
+      <input type="password" class="form-control" name="password1" minlength="6" maxlength="20" placeholder="Ingrese su contraseña">
+    </div>
+    <div class="form-group">
+      <label>Reingresa contraseña: </label>
+      <input type="password" class="form-control" name="password2" minlength="6" maxlength="20" placeholder="Ingrese nuevamente su contraseña">
+    </div>
+    <div class="form-group">
+      <label for="correo">Correo</label>
+      <input type="email" class="form-control" name="email" placeholder="Ingrese su correo">   
+    </div>
+    <button type="reset" class="btn btn-primary button">Limpiar</button>
+    <button type="submit" class="btn btn-primary button">Registrar</button>
+  </form>
+  <p1>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p1>
+  <p1>¿Ya tienes una cuenta?<a href="/login">Iniciar sesión</a></p1>
+  <p class="centrado">Plante© 2019</p>
+
+  </div>
+  </body>
+
+  <div class="form-group">
+      <label for="nombre">Nombre de usuario:</label>
+      <input type="text" height="50" class="form-control" name="username" placeholder="Ingrese su nombre de usuario">  
+    </div>
+    <div class="form-group">
+      <label>Contraseña:</label>
+      <input type="password" class="form-control" name="password" minlength="6" maxlength="20" placeholder="Ingrese su contraseña">
+    </div>
+    <div class="form-group">
+      <label>Reingresa contraseña: </label>
+      <input type="password" class="form-control" name="password2" minlength="6" maxlength="20" placeholder="Ingrese nuevamente su contraseña">
+    </div>
+    <div class="form-group">
+      <label for="correo">Correo</label>
+      <input type="email" class="form-control" name="email" placeholder="Ingrese su correo">   
+    </div>
+{% block footer %}
+{% endblock footer %}
+{% endblock contenido %}

@@ -43,9 +43,6 @@ def logout(request):
 def Home(request):# Creamos el formulario de autenticación vacío
     return render(request, 'principal/principal.html')
 
-def Registro(request):
-    return render(request, 'principal/Registro.html')
-
 def Principal(request):
     return render(request, 'principal/principal.html')
 
