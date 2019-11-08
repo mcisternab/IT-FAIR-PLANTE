@@ -119,15 +119,6 @@ body{
     
 
 }
-.containerJuego {
-    background: white;
-    width: 100%;
-    max-width: 650px;
-    margin: 48px auto;
-    border-radius: 10px;
-    padding: 40px;
-
-}
 .bodyInicio{
     background: url(../img/fondo4.jpg);
     background-position: center;
@@ -202,10 +193,6 @@ p1{
 img {
     max-width: 100%
 }
-iframe{
-    max-width: 100%
-}
-
 .container {
     position: relative;
     width: 50%;
