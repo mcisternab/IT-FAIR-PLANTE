@@ -3,7 +3,7 @@
 }
 
 .header{
-    background-color:#85D4B7;
+    background-color:rgba(0,0,0,.7);
 }
 .img-fluid{
     max-width: 100%;
@@ -105,8 +105,14 @@ body{
     margin: 48px auto;
     border-radius: 10px;
     padding: 40px;
-    
-
+}
+.containerPerfil{
+    background: url(../img/fondo2.jpg);
+    width: 100%;
+    max-width: 750px;
+    margin: 48px auto;
+    border-radius: 10px;
+    padding: 40px;
 }
 .containerPrincipal{
     background: rgba(0,0,0,.7);
