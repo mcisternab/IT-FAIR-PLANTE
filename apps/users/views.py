@@ -30,7 +30,6 @@ def register(request):
     form.fields['username'].help_text = None
     form.fields['password1'].help_text = None
     form.fields['password2'].help_text = None
-    form.fields['email'].help_text = None
 
     # Si llegamos al final renderizamos el formulario
     return render(request, "users/registro.html", {'form': form})
@@ -60,7 +59,6 @@ def login(request):
 
     # Si llegamos al final renderizamos el formulario
     return render(request, "users/login.html", {'form': form})
-
 
 def logout(request):
     # Finalizamos la sesión
