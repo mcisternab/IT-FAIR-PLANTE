@@ -3,7 +3,7 @@
 }
 
 .header{
-    background-color:rgba(0,0,0,.7);
+    background-color:#85D4B7;
 }
 .img-fluid{
     max-width: 100%;
@@ -238,3 +238,7 @@ img {
     transform: translate(-50%, -50%);
     text-align: center;
   }
+.label1{
+    font-family: 'Black Han Sans', sans-serif;
+}
+ 

@@ -4,23 +4,21 @@
 {% endblock header %}
 
 {% load static %}
-  <body>
-  <div class="containerPerfil texto-blanco centrado">
-  
-
+  <body class="containerPerfil">
+  <div class="containerInicio texto-blanco centrado label1">
   <form>
-    <h1 style="color: chartreuse;">Aquí se visualizan tus datos de usuarios</h1>
-    <label for="">Nombre de usario: {{request.user.username}} </label>
+    <h2>Datos Personales</h2>
+    <label>Nombre de usuario: </label> <b>{{request.user.username}}</b>
     <br>
-    <label for="">Nombre: {{request.user.first_name}}</label>
+    <label>Nombre: </label> <b>{{request.user.first_name}}</b>
     <br>
-    <label for="">Apellido: {{request.user.last_name}} </label>
+    <label>Apellido: </label> <b>{{request.user.last_name}}</b>
     <br>
-    <label for="">Correo electrónico: {{request.user.email}} </label>
+    <label>Correo electrónico: </label> <b>{{request.user.email}}</b>
     <br>
-    <label for="">Comuna: </label>
+    <label>Comuna: </label>
     <br>
-    <label for="">Fecha de nacimiento: {{request.user.date_joined}}</label>
+    <label>Fecha en que te uniste anuestra comunidad: </label> <b>{{request.user.date_joined}}</b>
     </form>
     <a href="/principal.html"><i class="fas fa-5x fa-arrow-circle-left"></i></a>
     <div class="form-group">
