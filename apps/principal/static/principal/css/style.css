@@ -3,7 +3,7 @@
 }
 
 .header{
-    background-color:#85D4B7;
+    background-color:rgb(0, 0, 0, 0.9);
 }
 .img-fluid{
     max-width: 100%;
@@ -35,7 +35,7 @@ li{
 }
 
 footer{
-    background-color:#85D4B7;
+    background-color: rgb(0, 0, 0, 0.9);
     width: 100%;
     margin: 10px auto;
     padding: 20px;
