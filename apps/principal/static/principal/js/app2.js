@@ -72,7 +72,7 @@ var questions = [
     pointsPerQuestion,
     currentQuestion,
     questionTimer,
-    timeForQuestion = 10, // seconds
+    timeForQuestion = 60, // seconds
     timeLeftForQuestion;
   // 4
   $(function() {

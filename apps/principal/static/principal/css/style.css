@@ -151,7 +151,7 @@ h2{
 }
 h3{
     font-family: 'Jomolhari', serif;
-    color: #BD0939;
+    color: rgb(244, 248, 3);
 }
 p{
     font-family: 'Viga', sans-serif;
@@ -241,7 +241,12 @@ img {
 .label1{
     font-family: 'Bowlby One SC', cursive;
 }
- 
+.boton{
+    background-color: #F0FF00; 
+    padding: 10px 24px;
+    border-radius: 12px ;
+    border: 2px solid black;
+}
 
 
 
@@ -270,16 +275,6 @@ header div.points {
     color: #fff;
     padding: 0px;
     font-size: 26px;
-}
-    
-.card {
-    background-color: red;
-    width: 500px;
-    background-color: #fff;
-    margin: 100px auto 30px auto;
-    border-radius: 6px;
-    text-align: center;
-    padding: 20px;
 }
     
 div.start .card {
