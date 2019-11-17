@@ -108,6 +108,7 @@ body{
 }
 .containerPerfil{
     background: url(../img/fondo2.jpg);
+    background-attachment: fixed;
     width: 100%;
     max-width: 750px;
     margin: 48px auto;
@@ -305,14 +306,14 @@ div.start .card p,
 }
     
 .card.question .options>li label {
-    background-color: #7ED2CF;
+    background-color: rgb(26, 194, 62);
     display: block;
     padding: 10px;
     border-radius: 20px;
 }
     
 .card.question .options>li label:hover {
-    background-color: #8EE8E5;
+    background-color: rgb(25, 233, 43);
 }
     
 .card.question .options>li input:checked+label {
