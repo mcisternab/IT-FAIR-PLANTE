@@ -44,22 +44,40 @@ def Home(request):# Creamos el formulario de autenticación vacío
     return render(request, 'principal/principal.html')
 
 def Principal(request):
-    return render(request, 'principal/principal.html')
+    if request.user.is_authenticated:
+       return render(request, 'principal/principal.html')
+    else:
+        return redirect('/login')
 
 def Info(request):
-    return render(request, 'principal/informacion.html')
+    if request.user.is_authenticated:
+        return render(request, 'principal/informacion.html')
+    else:
+        return redirect('/login')
 
 def Mapas(request):
-    return render(request, 'principal/mapas.html')
+    if request.user.is_authenticated:
+        return render(request, 'principal/mapas.html')
+    else:
+        return redirect('/login')
 
 def Juegos(request):
-    return render(request, 'principal/juegos.html')
+    if request.user.is_authenticated:
+        return render(request, 'principal/juegos.html')
+    else:
+        return redirect('/login')
     
 def Cuestionario(request):
-    return render(request, 'principal/cuestionario.html')
+    if request.user.is_authenticated:
+        return render(request, 'principal/cuestionario.html')
+    else:
+        return redirect('/login')
 
 def Perfil(request):
-    return render(request, 'users/perfil.html')
+    if request.user.is_authenticated:
+        return render(request, 'users/perfil.html')
+    else:
+        return redirect('/login')
 
 
 
