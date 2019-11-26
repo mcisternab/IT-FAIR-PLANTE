@@ -5,7 +5,7 @@
 
 {% load static %}
   <body class="containerPerfil">
-  <div class="containerInicio texto-blanco centrado label1">
+  <div class="containerInicio texto-blanco centrado labelPerfil">
   <form>
     <h2>Datos Personales</h2>
     <label>Nombre de usuario: </label> <b>{{request.user.username}}</b>
@@ -15,8 +15,6 @@
     <label>Apellido: </label> <b>{{request.user.last_name}}</b>
     <br>
     <label>Correo electronico: </label> <b>{{request.user.email}}</b>
-    <br>
-    <label>Comuna: </label>
     <br>
     <label>Fecha en que te uniste anuestra comunidad: </label> <b>{{request.user.date_joined}}</b>
     </form>

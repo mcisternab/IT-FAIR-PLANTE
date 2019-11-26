@@ -54,6 +54,9 @@ def Mapas(request):
 
 def Juegos(request):
     return render(request, 'principal/juegos.html')
+    
+def Cuestionario(request):
+    return render(request, 'principal/cuestionario.html')
 
 def Perfil(request):
     return render(request, 'users/perfil.html')

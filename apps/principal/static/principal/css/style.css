@@ -1,19 +1,22 @@
-.main{
-    background-color:#6DCCAA;
+/* Selectores */
+body{
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
 }
-
-.header{
+header{
     background-color:rgb(0, 0, 0, 0.9);
 }
-.img-fluid{
-    max-width: 100%;
-    height: auto;
+footer{
+    background-color: rgb(0, 0, 0, 0.9);
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px;
 }
-.centrar{
-    text-align: center;
-}
-.texto-blanco{
-    color:#ffffff;
+img {
+    max-width: 100%
 }
 a{
     text-decoration: none;
@@ -30,21 +33,56 @@ li{
     margin-left: 10px;
     margin-right: 10px;
 }
-.texto-derecha{
-    text-align: right;
+h1{
+    font-family: 'Patua+One', sans-serif;
+    color: #3B7FFF;
+    text-align: center;
+}
+h2{
+    font-family: 'Roboto', cursive;
+    color: rgb(190, 8, 8);
+}
+h3{
+    font-family: 'Jomolhari', serif;
+    color: rgb(244, 248, 3);
+}
+p{
+    font-family: 'Viga', sans-serif;
 }
 
-footer{
-    background-color: rgb(0, 0, 0, 0.9);
-    width: 100%;
-    margin: 10px auto;
-    padding: 20px;
+/* Otros selectores secundarios */
+.h1{
+    font-family: 'Lilita One', cursive;
 }
-.altura{
-    height: 450px;
-    object-fit: cover;
-    object-position: center;
+.h2{
+    font-family: 'Anton', sans-serif;
+    color: #3B7FFF;
 }
+
+p1{
+    font-family: 'Andika', sans-serif;
+    color: beige;
+}
+.labelPerfil{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.buttun1{
+    background-color: rgb(25, 171, 197);
+    border: black solid 3px;
+    border-radius: 12px ;
+    width: 50%;
+    height: 30%;
+}
+.buttun1:hover{
+    background-color: rgb(20, 187, 5);
+}
+.link1{
+    color: rgb(252, 252, 252);
+}
+
+/* estilos carrusel */
+
 .carousel-indicators li{
     width: 10px;
     height: 50px;
@@ -72,12 +110,36 @@ footer{
     color: #000000;
     font-weight: bold;
 }
-.center{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    justify-content: center;
-    
+.boton{
+    background-color: rgb(0, 255, 0); 
+    padding: 10px 24px;
+    border-radius: 12px ;
+    border: 2px solid black;
+}
+
+
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.centrar{
+    text-align: center;
+}
+.texto-blanco{
+    color:#ffffff;
+}
+
+
+.texto-derecha{
+    text-align: right;
+}
+
+
+.altura{
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
 }
 
 @media (max-width: 576px) {
@@ -91,13 +153,10 @@ footer{
 .img-margin-top{
     margin-top: 10px;
 }
-body{
-    background: url(../img/fondo.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0px;
-    padding: 0px;
+.main{
+    background-color:#6DCCAA;
 }
+
 .containerInicio{
     background: rgba(0,0,0,.7);
     width: 100%;
@@ -134,33 +193,8 @@ body{
     margin: 10%;
     padding: 0px;
 }
-label.is-invalid{
-    color: yellow;
-}
-h1{
-    font-family: 'Patua+One', sans-serif;
-    color: #3B7FFF;
-    text-align: center;
-}
-h2{
-    font-family: 'Luckiest Guy', cursive;
-    color: #3B7FFF;
-}
-.h2{
-    font-family: 'Anton', sans-serif;
-    color: #3B7FFF;
-}
-h3{
-    font-family: 'Jomolhari', serif;
-    color: rgb(244, 248, 3);
-}
-p{
-    font-family: 'Viga', sans-serif;
-}
-p1{
-    font-family: 'Andika', sans-serif;
-    color: beige;
-}
+
+
 .centrado{
     text-align: center;
 }
@@ -197,9 +231,7 @@ p1{
 .fondoVerde{
     background-color:  chartreuse;
 }
-img {
-    max-width: 100%
-}
+
 .container {
     position: relative;
     width: 50%;
@@ -239,9 +271,7 @@ img {
     transform: translate(-50%, -50%);
     text-align: center;
   }
-.label1{
-    font-family: 'Bowlby One SC', cursive;
-}
+
 .boton{
     background-color: #F0FF00; 
     padding: 10px 24px;
@@ -250,6 +280,7 @@ img {
 }
 
 
+/* Estilos juegos */
 
 header div.countdown {
     float: right;

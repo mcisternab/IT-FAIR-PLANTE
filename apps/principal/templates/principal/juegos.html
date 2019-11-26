@@ -1,6 +1,11 @@
+<!--
+  En esta parte se colocan los juegos de la organización Plante.
+-->
 {% extends 'principal/plantillaPrincipal.html'%}
-{% load static %}
 {% block contenido %}
+
+{% load static %}
+<body>
 
 <Header>
     <nav class="navbar navbar-expand-lg navbar-dark header">
@@ -50,41 +55,44 @@
         </div>   
     </nav>   
 </Header>
-<br>
-<div class="containerJuego centrado">
-  <h2 style="color: black;" >Hola bienvenidos a los juegos de Plante</h2>
-<div>
-  <div >
-      <a href="{% static 'principal/juegos/Over Figter/index.html' %}"><img src="{% static 'principal/img/basurerocomiendo.gif' %}" alt="Juego dbz" width="200"/></a>
-  </div>  
-</div>
-</div>
 
- <ul class="containerInicio  centrado">
-            <div class="containerJuego centrado">
-                <h2 style="color: black;" >¿Crees que aprendiste?</h2>
-                <h2 style="color: black;">Averigualo</h2>
-            <div>
-              <div class="countdown"><span class="time_left">12s</span></div>
-              <div class="points"><span class="points">0 points</span></div>
-            </header>
-            <div class="start">
-              <div class="card">
-                <p>¿Listo para comenzar?</p>
-                <button class="start boton" style="background-color: red;">Comenzar</button>
+  <div class="row containerPrincipal texto-blanco centrado fondoVerde">
+   
+      <div class="row" style="color: black; font-family: 'Slabo 30px', serif;">
+          <div class="col-md-4 col-sm-12 ">
+              <div class="card mb-4 shadow-sm">
+                <h1 class="h1">Memorice</h1>
+                <p>Es un juego el cual veremos que tan buena está tu memoria.</p>
+                <br><br>
+                    <img src="{% static 'principal/img/memoria.png' %}" alt="Imágen memoria"><br><br>
+                <div class="card-body">
+                    <button class="buttun1"><a class="link1" href="{% static 'principal/juego1/memorice.html' %}">Jugar</a></button>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="card mb-4 shadow-sm">
+              <h1 class="h1">Cuestionario</h1>
+              <p>A Plante lo que más le interesa es que a través de esta página comience un gran proyecto.</p>
+                 <img src="{% static 'principal/img/trivia.png' %}" alt="Imágen trivia">
+              <div class="card-body">
+                  <button class="buttun1"><a class="link1" href="/cuestionario.html">Jugar</a></button>
               </div>
             </div>
-            <div class="play">
-              <div class="questions"></div>
-            </div>
-            <div class="finish card">
-              <p class="times_up">¡Se acabó el tiempo!</p>
-              <p>Has obtenido</p>
-              <p class="final_points">8 puntos</p>
-              <div class="play_again">  
-                <button>Volver a jugar</button>
+          </div>
+          <div class="col-md-4 col-sm-12">
+              <div class="card mb-4 shadow-sm centrado">
+                <h1 class="h1">Serpiente recicladora</h1>
+                <p>Veamos si eres bueno reciclando junto a nuestra serpeinte recicladora.</p>
+                    <img src="{% static 'principal/img/serpiente.jpg' %}" alt="Imágen serpiente"> 
+                <div class="card-body">
+                    <button class="buttun1"><a class="link1" href="{% static 'principal/juego2/serpiente.html' %}">Jugar</a></button>
+                </div>
               </div>
-            </div>
-   </ul>
-
+         </div>
+        
+        </div>
+    
+  </div>
+</body>
 {% endblock contenido %}

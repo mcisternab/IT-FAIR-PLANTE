@@ -1,3 +1,8 @@
+<!--
+    Esta es la plantilla prncipal para todas las ventanas, 
+    contiene el contenido head, archivos javascript, css y el footer.
+-->
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="es">
@@ -7,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Plante</title>
-    <link href="https://fonts.googleapis.com/css?family=Andika|Luckiest+Guy|Jomolhari|Bowlby+One+SC|Alfa+Slab+One|Viga|Anton|Lilita+One|Slabo+27px|El+Messiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Andika|Roboto|Lato|Jomolhari|Bowlby+One+SC|Alfa+Slab+One|Viga|Anton|Lilita+One|Slabo+27px|El+Messiri&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'principal/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'principal/css/flexboxgrid.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
@@ -18,13 +23,16 @@
     <link rel="shortcut icon" href="{% static 'principal/img/logo.png' %}">
     {% endblock extrahead %}
 </head>
+
 <body>
 
-    {% block contenido %}
+{% block contenido %}
 
-    {% endblock contenido %}
+{% endblock contenido %}
 
-    {% block footer %}
+<!--Este es el footer de la página-->
+
+{% block footer %}
     <footer class="col-xs-12">
         <div class="row footer col-xs-12">
             <div class="col-xs-12 col-sm-4 centrado">
@@ -72,10 +80,10 @@
             </div>
          </div>
     </footer>
-    {% endblock footer %}
+{% endblock footer %}
 
-    {% block extrajs %}
-    <!--JS FILES-->
+<!--JS FILES-->
+{% block extrajs %}
     <script src="{% static 'principal/js/jquery-3.4.1.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="{% static 'principal/js/jquery.validate.js' %}"></script>
@@ -83,10 +91,10 @@
     <script src="{% static 'principal/js/bootstrap.js' %}"></script>
     <script src="{% static 'principal/js/app.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-
     <script src="{% static 'principal/js/jquery-3.4.1.js' %}"></script>
     <script src="{% static 'principal/js/underscore-min.js' %}"></script>
     <script src="{% static 'principal/js/app2.js' %}"></script>
-    {% endblock extrajs %}
+{% endblock extrajs %}
+
 </body>
 </html>

@@ -1,86 +1,53 @@
+<!-- 
+    Esta es la ventana donde se registran los usuarios
+-->
+
 {% extends 'principal/plantillaPrincipal.html'%}
 {% block contenido %}
 {% block header %}
 {% endblock header %}
 
 {% load static %}
-  <body class="bodyInicio">
-  <div class="containerInicio texto-blanco" >
-  <div class="row">
-    <div class="col-lg-10">
+
+<body class="bodyInicio">
+    <div class="containerInicio texto-blanco" >
         <h2 class="h2">Registro de usuario</h2>
+        <form method="POST" class="form-group">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username">Nombre de usuario: </label>
+                <input type="text" minlength="3" maxlength="20" class="form-control" name="username" placeholder="Ingrese su numero de contacto" required>   
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-6">
+                    <label for="first_name">Nombre: </label>
+                    <input type="text" class="form-control" name="first_name" placeholder="Ingrese su nombre" required>   
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="last_name">Apellido</label>
+                    <input type="text" class="form-control" name="last_name" required placeholder="Ingrese su apellido" required>   
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password1">Contraseña: </label>
+                <input type="password" minlength="8" maxlength="20" class="form-control" name="password1" placeholder="Ingrese su contraseña" required>   
+            </div>
+            <div class="form-group">
+                <label for="password2">Confirmar Contraseña: </label>
+                <input type="password" minlength="8" maxlength="20" class="form-control" name="password2" placeholder="Reingrese su contraseña" required>   
+            </div>
+            <div class="form-group">
+                <label for="email">Correo</label>
+                <input type="email" class="form-control" name="email" placeholder="Ingrese su correo electrónico" required>   
+            </div>
+            <button type="reset" class="btn btn-primary button">Limpiar</button>
+            <button type="submit" class="btn btn-primary button">Registrar</button>
+        </form>
+        <p1>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p1>
+        <p1>¿Ya tienes una cuenta?<a href="/login">Iniciar sesión</a></p1>
+        <p class="centrado">Plante© 2019</p>
     </div>
-    <br>
-    <div class="col-lg-1">
-        <a class="nav-item active hint--left hint--info hint--rounded hint--bounce" aria-label="Usuario"" href="#">
-            <i class="fas fa-3x fa-user"></i>
-        </a>
-    </div>
-    <div class="col-lg-1">
-        <a class="nav-item hint--right hint--info hint--rounded hint--bounce" aria-label="Administrador"" href="#">
-            <i class="fas fa-3x fa-user-tie" style="color: white;"></i>
-        </a>
-    </div>
-  </div>
-  
-
-  <form method="POST" class="form-group">
-    {% csrf_token %}
-    <div class="form-group">
-      <label for="username">Nombre de usuario: </label>
-      <input type="text" minlength="3" maxlength="20" class="form-control" name="username" placeholder="Ingrese su numero de contacto" required>   
-    </div>
-    <div class="row">
-      <div class="form-group col-lg-6">
-        <label for="first_name">Nombre: </label>
-        <input type="text" class="form-control" name="first_name" placeholder="Ingrese su nombre" required>   
-      </div>
-      <div class="form-group col-lg-6">
-        <label for="last_name">Apellido</label>
-        <input type="text" class="form-control" name="last_name" required placeholder="Ingrese su apellido" required>   
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="password1">Contraseña: </label>
-      <input type="password" minlength="8" maxlength="20" class="form-control" name="password1" placeholder="Ingrese su contraseña" required>   
-    </div>
-    <div class="form-group">
-      <label for="password2">Confirmar Contraseña: </label>
-      <input type="password" minlength="8" maxlength="20" class="form-control" name="password2" placeholder="Reingrese su contraseña" required>   
-    </div>
-    <div class="form-group">
-      <label for="email">Correo</label>
-      <input type="email" class="form-control" name="email" placeholder="Ingrese su correo electrónico" required>   
-    </div>
-    <div class="form-group">
-      <label for="imagen">Seleccione una foto de perfil</label>
-      <input name="archivo1" type="file" class="form-control" id="archivo1" required>
-    </div>
-    <div class="form-group">
-        <label for="Comuna">Comuna </label>
-        <br>
-        <select name="Comuna" class="form-control selectpicker" required>
-            <option class="btn-primary" >Huechuraba</option>
-            <option class="btn-primary">Las condes</option>
-            <option class="btn-primary">Renca</option>
-            <option class="btn-primary">Quilicura</option>
-            <option class="btn-primary">Conchalí</option>
-            <option class="btn-primary">Providencia</option>
-            <option class="btn-primary">Macul</option>
-            <option class="btn-primary">Ñuñoa</option>
-            <option class="btn-primary">Renca</option>
-            <option class="btn-primary" selected> </option>
-        </select>  
-    </div>
-    <button type="reset" class="btn btn-primary button">Limpiar</button>
-    <button type="submit" class="btn btn-primary button">Registrar</button>
-  </form>
-  <p1>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p1>
-  <p1>¿Ya tienes una cuenta?<a href="/login">Iniciar sesión</a></p1>
-  <p class="centrado">Plante© 2019</p>
-
-  </div>
-  </body>
+</body>
 {% block footer %}
 {% endblock footer %}
 {% endblock contenido %}
