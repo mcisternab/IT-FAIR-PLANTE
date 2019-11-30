@@ -4,6 +4,9 @@
 {% endblock header %}
 
 {% load static %}
+<head>
+  <script src="{% static 'principal/js/push.min.js' %}"></script>
+</head>
   <body class="containerPerfil">
   <div class="containerInicio texto-blanco centrado labelPerfil">
   <form>
@@ -22,6 +25,15 @@
     
 
   </div>
+
+  <script>
+      Push.create("Hola {{request.user.first_name}}", {
+      body: "¿Te gustaría ser parte de Plante?",
+      icon: "{% static 'principal/img/logo.png' %}",
+      timeout: 6000,
+    });
+  </script>
+
   </body>
 {% block footer %}
 {% endblock footer %}
