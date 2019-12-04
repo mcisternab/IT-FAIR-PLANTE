@@ -5,36 +5,37 @@
 
 {% load static %}
 <head>
-  <script src="{% static 'principal/js/push.min.js' %}"></script>
+    <script src="{% static 'principal/js/push.min.js' %}"></script>
 </head>
-  <body class="containerPerfil">
-  <div class="containerInicio texto-blanco centrado labelPerfil">
-  <form>
-    <h3>Datos Personales</h3>
-    <label>Nombre de usuario: </label> <b>{{request.user.username}}</b>
-    <br>
-    <label>Nombre: </label> <b>{{request.user.first_name}}</b>
-    <br>
-    <label>Apellido: </label> <b>{{request.user.last_name}}</b>
-    <br>
-    <label>Correo electronico: </label> <b>{{request.user.email}}</b>
-    <br>
-    <label>Fecha en que te uniste anuestra comunidad: </label> <b>{{request.user.date_joined}}</b>
-    </form>
-    <a href="/principal.html"><i class="fas fa-5x fa-arrow-circle-left"></i></a>
-    
 
-  </div>
-
-  <script>
-      Push.create("Hola {{request.user.first_name}}", {
-      body: "¿Te gustaría ser parte de Plante?",
-      icon: "{% static 'principal/img/logo.png' %}",
-      timeout: 6000,
-    });
-  </script>
-
-  </body>
+<body class="containerPerfil">
+    <div class="containerInicio texto-blanco centrado">
+        <form>
+          <h3>Datos Personales</h3>
+          <div class="col-md-12">
+              <label class="labelPerfil">Nombre de usuario: </label> <b class="b1">{{request.user.username}}</b>
+              <br>
+          </div>
+          <div class="col-md-12">
+              <label class="labelPerfil">Nombre: </label> <b class="b1">{{request.user.first_name}}</b>
+              <br>            
+          </div>
+          <div class="col-md-12">
+              <label class="labelPerfil">Apellido: </label> <b class="b1">{{request.user.last_name}}</b>
+              <br>       
+          </div>
+          <div class="col-md-12">
+              <label class="labelPerfil">Correo electrónico: </label> <b class="b1">{{request.user.email}}</b>
+              <br>  
+          </div>
+          <div class="col-md-12">
+              <label class="labelPerfil">Fecha en que te uniste a nuestra comunidad: </label> <b class="b1">{{request.user.date_joined}}</b>
+              <br> <br>
+          </div>
+        </form>
+        <a href="/principal.html"><i class="fas fa-5x fa-arrow-circle-left" title="volver"></i></a> 
+    </div>
+</body>
 {% block footer %}
 {% endblock footer %}
 {% endblock contenido %}

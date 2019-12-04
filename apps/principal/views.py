@@ -26,6 +26,9 @@ def login(request):
                 do_login(request, user)
                 # Y le redireccionamos a la portada
                 return redirect('principal.html')
+    
+    
+        
 
     # Si llegamos al final renderizamos el formulario
     return render(request, "users/login.html", {'form': form})
@@ -78,6 +81,10 @@ def Perfil(request):
         return render(request, 'users/perfil.html')
     else:
         return redirect('/login')
+
+def Administracion(request):
+    if request.user.is_superuser == "true":
+        return redirect('administracion.html')
 
 
 

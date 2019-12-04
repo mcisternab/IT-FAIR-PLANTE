@@ -1,95 +1,156 @@
 /* Selectores */
-body{
+a {
+    text-decoration: none;
+}
+b {
+    text-transform: capitalize;
+    color: lawngreen;
+}
+body {
     background: url(../img/fondo.jpg);
     background-size: cover;
     background-attachment: fixed;
     margin: 0px;
     padding: 0px;
 }
-header{
-    background-color:rgb(0, 0, 0, 0.9);
-}
-footer{
+footer {
     background-color: rgb(0, 0, 0, 0.9);
     width: 100%;
     margin: 10px auto;
     padding: 20px;
 }
-img {
-    max-width: 100%
-}
-a{
-    text-decoration: none;
-}
-#logo{
-    padding: 10px;
-}
-ul{
-    list-style: none;
-    padding: 10px;
-}
-li{
-    display: inline;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-h1{
+h1 {
     font-family: 'Patua+One', sans-serif;
     color: #3B7FFF;
     text-align: center;
 }
-h2{
+h2 {
     font-family: 'Roboto', cursive;
     color: rgb(190, 8, 8);
 }
-h3{
+h3 {
     font-family: 'Jomolhari', serif;
     color: rgb(244, 248, 3);
 }
-p{
+header {
+    background-color:rgb(0, 0, 0, 0.9);
+}
+img {
+    max-width: 100%
+}
+li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#logo {
+    padding: 10px;
+}
+p {
     font-family: 'Viga', sans-serif;
+}
+ul {
+    list-style: none;
+    padding: 10px;
 }
 
 /* Otros selectores secundarios */
-.h1{
-    font-family: 'Lilita One', cursive;
-}
-.h2{
-    font-family: 'Anton', sans-serif;
-    color: #3B7FFF;
-}
-
-p1{
-    font-family: 'Andika', sans-serif;
-    color: beige;
-}
-.labelPerfil{
-    font-family: 'Lato', sans-serif;
+.b1 {
+    text-transform: capitalize;
     font-size: 20px;
 }
-.buttun1{
+.buttun1 {
     background-color: rgb(25, 171, 197);
     border: black solid 3px;
     border-radius: 12px ;
     width: 50%;
     height: 30%;
 }
-.buttun1:hover{
+.buttun1:hover {
     background-color: rgb(20, 187, 5);
 }
-.link1{
+.h1 {
+    font-family: 'Lilita One', cursive;
+}
+.h2 {
+    font-family: 'Anton', sans-serif;
+    color: #3B7FFF;
+}
+.labelPerfil {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 2mm;
+    margin: 1px;
+    color: rgb(49, 184, 15);
+}
+.link1 {
     color: rgb(252, 252, 252);
+}
+p1 {
+    font-family: 'Andika', sans-serif;
+    color: beige;
+}
+
+/* Containers y fondos */
+
+.bodyInicio {
+    background: url(../img/fondo4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 10%;
+    padding: 0px;
+}
+.container {
+    position: relative;
+    width: 50%;
+}
+.containerInicio {
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    max-width: 750px;
+    margin: 48px auto;
+    border-radius: 10px;
+    padding: 40px;
+}
+.containerPerfil {
+    background: url(../img/fondo2.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    max-width: 750px;
+    margin: 48px auto;
+    border-radius: 10px;
+    padding: 40px;
+}
+.containerPrincipal {
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border-width: 100px;
+    padding: 40px;
+}
+.fondoVerde {
+    background-color:  chartreuse;
 }
 
 /* estilos carrusel */
-
-.carousel-indicators li{
-    width: 10px;
-    height: 50px;
-    border: 5px;
-    border-radius: 40px;
+.boton {
+    background-color: rgb(0, 255, 0); 
+    padding: 10px 24px;
+    border-radius: 12px ;
+    border: 2px solid black;
 }
-.carousel-control-next-icon{
+.carousel-caption {
+    left: 10px;
+    right: 55%;
+    text-align: left;
+    color: #000000;
+    font-weight: bold;
+}
+.carousel-control-next-icon {
     background-color: rgb(0, 45, 245);
     border: 2px solid black;
     border-radius: 40px;
@@ -103,115 +164,31 @@ p1{
     width: 30px;
     height: 30px;
 }
-.carousel-caption{
-    left: 10px;
-    right: 55%;
-    text-align: left;
-    color: #000000;
-    font-weight: bold;
-}
-.boton{
-    background-color: rgb(0, 255, 0); 
-    padding: 10px 24px;
-    border-radius: 12px ;
-    border: 2px solid black;
+.carousel-indicators li {
+    width: 10px;
+    height: 50px;
+    border: 5px;
+    border-radius: 40px;
 }
 
+/* Otros */
 
-
-.img-fluid{
-    max-width: 100%;
-    height: auto;
-}
-.centrar{
-    text-align: center;
-}
-.texto-blanco{
-    color:#ffffff;
-}
-
-
-.texto-derecha{
-    text-align: right;
-}
-
-
-.altura{
+.altura {
     height: 450px;
     object-fit: cover;
     object-position: center;
 }
-
-@media (max-width: 576px) {
-    .no-xs{
-        display: none;
-    }
-    .margin-top-xs{
-        margin-top: 20px;
-    }
+.centrado {
+    text-align: center;
 }
-.img-margin-top{
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.img-margin-top {
     margin-top: 10px;
 }
-.main{
-    background-color:#6DCCAA;
-}
-
-.containerInicio{
-    background: rgba(0,0,0,.7);
-    width: 100%;
-    max-width: 750px;
-    margin: 48px auto;
-    border-radius: 10px;
-    padding: 40px;
-}
-.containerPerfil{
-    background: url(../img/fondo2.jpg);
-    background-attachment: fixed;
-    width: 100%;
-    max-width: 750px;
-    margin: 48px auto;
-    border-radius: 10px;
-    padding: 40px;
-}
-.containerPrincipal{
-    background: rgba(0,0,0,.7);
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    border-radius: 10px;
-    border-width: 100px;
-    padding: 40px;
-    
-
-}
-.bodyInicio{
-    background: url(../img/fondo4.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 10%;
-    padding: 0px;
-}
-
-
-.centrado{
-    text-align: center;
-}
-.section{
-    margin-left: 30px;
-    margin-right: 30px;
-}	
-.texto-borde {
-    text-align: center;
-    color: #FCDB00;
-    font-family: impact;
-    font-size: 46px;
-    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
-    -webkit-text-fill-color: chartreuse;
-    -webkit-text-stroke: 4px black;
-}
-#linav{
+#linav {
 	box-sizing: content-box;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
@@ -228,14 +205,39 @@ p1{
     opacity: .5;
     transition: opacity .6s ease;
 }
-.fondoVerde{
-    background-color:  chartreuse;
+.main {
+    background-color:#6DCCAA;
 }
+@media (max-width: 576px) {
+    .no-xs{
+        display: none;
+    }
+    .margin-top-xs{
+        margin-top: 20px;
+    }
+}
+.texto-blanco {
+    color:#ffffff;
+}
+.texto-borde {
+    text-align: center;
+    color: #FCDB00;
+    font-family: impact;
+    font-size: 46px;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    -webkit-text-fill-color: chartreuse;
+    -webkit-text-stroke: 4px black;
+}
+.texto-derecha {
+    text-align: right;
+}
+.section {
+    margin-left: 30px;
+    margin-right: 30px;
+}	
 
-.container {
-    position: relative;
-    width: 50%;
-  }
+
+
   
   /* Make the image to responsive */
   .image {

@@ -15,3 +15,7 @@ html, body{
 #canvas{
 	display: block;
 }
+
+.centrado{
+	text-align: center;
+}

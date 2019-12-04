@@ -365,6 +365,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	ctx.textAlign = "center";
 	ctx.fillText(
 		"Toca la pantalla, haz click en ella o presiona Enter para comenzar",
+		function consultar(){
+			$("td.column-4").append();
+		  },
 		$canvas.width / 2,
 		$canvas.height / 2
 	);
