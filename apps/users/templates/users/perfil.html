@@ -35,6 +35,13 @@
         </form>
         <a href="/principal.html"><i class="fas fa-5x fa-arrow-circle-left" title="volver"></i></a> 
     </div>
+    <script>
+        Push.create("Hola {{request.user.first_name}}", {
+        body: "¿Te gustaría ser parte de Plante?",
+        icon: "{% static 'principal/img/logo.png' %}",
+        timeout: 6000,
+        });
+    </script>
 </body>
 {% block footer %}
 {% endblock footer %}

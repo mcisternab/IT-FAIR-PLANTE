@@ -52,9 +52,10 @@
 </Header>
 
 <div class="containerPrincipal texto-blanco centrado">
-        <div class="col-xs-12 col-sm-10 margin-top-xs center ">
-            <span class="texto-borde" style="font-size: 53px"> Colores del reciclaje </span>
-            <p>En este punto te enseñaremos los distintos tipos de colores que tienen los basureros y las distintas funcionalidades que estos tienen</p>
+        <div class="col-xs-12 col-sm-10 col-md-12 margin-top-xs">
+            <span class="texto-borde centrado" style="font-size: 53px"> Colores del reciclaje </span>
+            <p>En este punto te enseñaremos los distintos tipos de colores que tienen los basureros</p> 
+            <p>y las distintas funcionalidades que estos tienen</p>
           </div>
           <br>
           <div class="row">
@@ -63,11 +64,9 @@
               <a data-fancybox="gallery" href="{% static 'principal/img/basureroamarilllo.jpg' %}">
                 <img src="{% static 'principal/img/basureroamarilllo.jpg' %}" class="img-fluid img-margin-top" alt="basureroamarilllo"width="250"  srcset="">
               </a>
-              <div class="overlay" style="background-color: yellow;">
+              <div class="overlay" style="background-color: yellow; color: black;">
                 <div class="text">
-                    <i class="fas fa-apple-alt"></i>
-                        Aquí se depositan latas y residuos de plásticos, como cervezas, botellas de bebidas, bolsas plásticas.
-                    <i class="fas fa-apple-alt"></i>
+                    Aquí se depositan latas y residuos de plásticos, como cervezas, botellas de bebidas, bolsas plásticas.
                 </div>
               </div>
           </div>
@@ -84,7 +83,6 @@
                 </div>
               </div>
           </div>
-  
             <div class="container col-md-4 col-xs-12">
                 <h2 style="color: red;">Basurero rojo</h2>
                 <a data-fancybox="gallery" href="{% static 'principal/img/basurerorojo.jpg' %}">
@@ -144,7 +142,13 @@
         </div>
         <br>
         <br>
-        <h3 style="color: white;">¿No te ha quedado claro?, pues aquí dejamos algunos videos que pueden ayudarte a entender mejor</h3>
+        <!-- 
+            Esta es la parte del carrusel de videos 
+        -->
+        <div class="col-md-12 centrado">
+            <h3 style="color: white;">¿No te ha quedado claro?, pues aquí dejamos <br> algunos videos que pueden ayudarte a entender mejor</h3>
+        </div>
+        
                     <br>
                     <div id="myCarousel" class="carousel slide centrado" data-ride="carousel">
                         <div class="carousel-inner">
